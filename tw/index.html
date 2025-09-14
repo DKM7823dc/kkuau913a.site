@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ar">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10978664052"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17056760534"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-10978664052');
+  gtag('config', 'AW-17056760534');
 </script>
-<!-- Event snippet for st conversion page
+
+<!-- Event snippet for 购买 conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
@@ -20,7 +21,7 @@ function gtag_report_conversion(url) {
     }
   };
   gtag('event', 'conversion', {
-      'send_to': 'AW-10978664052/_m-rCIHUw5obEPS8hPMo',
+      'send_to': 'AW-17056760534/tp1mCOOXrJobENaFpsU_',
       'transaction_id': '',
       'event_callback': callback
   });
@@ -28,77 +29,605 @@ function gtag_report_conversion(url) {
 }
 </script>
 
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025</title>
+    <title>مجموعة تعليم التداول | التعليم الاستثماري</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-blue': '#0A0E1A',
+                        'dark-blue': '#1A1F2E',
+                        'accent-yellow': '#FFD700',
+                        'light-yellow': '#FFF8DC',
+                        'gray-text': '#B8BCC5',
+                        'electric-blue': '#00D4FF',
+                        'neon-green': '#39FF14',
+                        'cyber-purple': '#8A2BE2'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate',
+                        'slide-up': 'slide-up 0.8s ease-out',
+                        'chart-line': 'chart-line 3s ease-in-out infinite',
+                        'particle-float': 'particle-float 8s linear infinite',
+                    }
+                }
+            }
+        }
+
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        function h2() {
+           gtag_report_conversion('https://ourl.cn/644i9j');
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('joinNowBtn').addEventListener('click', h2);
+            document.getElementById('joinSignalBtn').addEventListener('click', h2);
+            
+            // Create floating particles
+            createFloatingParticles();
+            
+            // Create stock chart animation
+            createStockChartLines();
+        });
+
+        function createFloatingParticles() {
+            const container = document.querySelector('.particles-container');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                container.appendChild(particle);
+            }
+        }
+
+        function createStockChartLines() {
+            const container = document.querySelector('.chart-lines-container');
+            for (let i = 0; i < 5; i++) {
+                const line = document.createElement('div');
+                line.className = 'chart-line';
+                line.style.top = Math.random() * 100 + '%';
+                line.style.animationDelay = Math.random() * 3 + 's';
+                container.appendChild(line);
+            }
+        }
+    </script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            background-color: #f5f5f5;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            direction: rtl;
+        }
+        
+        .gradient-bg {
+            background: radial-gradient(ellipse at top, #1a1f2e 0%, #0a0e1a 50%, #000000 100%);
+            position: relative;
+        }
+        
+        .gradient-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .golden-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+        
+        .glow-effect {
+            box-shadow: 
+                0 0 20px rgba(255, 215, 0, 0.3),
+                0 0 40px rgba(255, 215, 0, 0.2),
+                0 0 60px rgba(255, 215, 0, 0.1);
+        }
+        
+        .hover-glow:hover {
+            box-shadow: 
+                0 0 30px rgba(255, 215, 0, 0.6),
+                0 0 60px rgba(255, 215, 0, 0.4),
+                0 0 90px rgba(255, 215, 0, 0.2);
+            transform: translateY(-3px) scale(1.02);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .testimonial-card {
+            backdrop-filter: blur(20px);
+            background: linear-gradient(145deg, rgba(26, 31, 46, 0.9), rgba(16, 20, 32, 0.8));
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(45deg, #FFD700, #00D4FF, #8A2BE2, #FFD700);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            z-index: -1;
+        }
+
+        .number-circle {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            border-radius: 50%;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            padding: 10px;
-            min-height: 100vh;
+            justify-content: center;
+            color: #0A0E1A;
+            font-weight: 800;
+            flex-shrink: 0;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            position: relative;
         }
-        
-        .a7x9k {
-            margin: 5px 0;
-            cursor: pointer;
-            transition: transform 0.2s ease;
+
+        .number-circle::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #FFD700, #00D4FF, #8A2BE2);
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .elite-card {
+            background: linear-gradient(145deg, rgba(26, 31, 46, 0.95), rgba(10, 14, 26, 0.9));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            max-width: 400px;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
         }
-        
-        .a7x9k:hover {
-            transform: scale(1.02);
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 215, 0, 0.6);
+            border-radius: 50%;
+            animation: particle-float 8s linear infinite;
         }
-        
-        .a7x9k img {
+
+        .chart-lines-container {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
         }
-        
+
+        .chart-line {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(0, 212, 255, 0.5) 50%, transparent 100%);
+            animation: chart-line 6s ease-in-out infinite;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .neon-text {
+            text-shadow: 0 0 3px currentColor;
+        }
+
+        .cyber-grid {
+            background-image: 
+                linear-gradient(rgba(255, 215, 0, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 215, 0, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: grid-move 20s linear infinite;
+        }
+
+        .premium-shadow {
+            box-shadow: 
+                0 0 0 1px rgba(255, 215, 0, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0.1),
+                0 16px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); }
+            100% { box-shadow: 0 0 40px rgba(255, 215, 0, 0.8); }
+        }
+
+        @keyframes slide-up {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes chart-line {
+            0% { transform: translateX(-100%); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateX(100%); opacity: 0; }
+        }
+
+        @keyframes particle-float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+        }
+
+        @keyframes grid-move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-title {
+            background: linear-gradient(135deg, #ffffff 0%, #FFD700 50%, #ffffff 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: slide-up 1s ease-out;
+        }
+
+        .feature-grid {
+            perspective: 1000px;
+        }
+
+        .feature-card {
+            transform-style: preserve-3d;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Mobile compact spacing */
         @media (max-width: 768px) {
-            body {
-                padding: 5px;
+            .mobile-compact {
+                margin-bottom: 0.75rem;
             }
-            
-            .a7x9k {
-                margin: 3px 0;
+            .mobile-compact-lg {
+                margin-bottom: 1rem;
             }
-            
-            .a7x9k img {
-                width: 100%;
+            .mobile-section {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+            .mobile-features-section {
+                padding-top: 1rem;
+                padding-bottom: 1.5rem;
             }
         }
     </style>
 </head>
-<body>
-    <div class="a7x9k" onclick="k2()">
-        <img src="img/1.png" alt="资源1">
-    </div>
-    
-    <div class="a7x9k" onclick="k2()">
-        <img src="img/2.png" alt="资源2">
-    </div>
-    
-    <div class="a7x9k" onclick="k2()">
-        <img src="img/3.png" alt="资源3">
+<body class="gradient-bg text-white font-inter relative">
+    <!-- Animated Background Elements -->
+    <div class="particles-container"></div>
+    <div class="chart-lines-container"></div>
+    <div class="cyber-grid fixed inset-0 opacity-20 pointer-events-none"></div>
+
+    <!-- Risk Warning Banner -->
+    <div class="bg-red-600/90 text-white text-center py-3 px-4 text-sm md:text-base">
+        <strong>تحذير من المخاطر:</strong> تداول الأدوات المالية ينطوي على مخاطر عالية وقد يؤدي إلى خسارة كامل رأس المال. هذا المحتوى لأغراض تعليمية فقط وليس نصيحة استثمارية.
     </div>
 
-    <script>
-        function k2() {
-            gtag_report_conversion('http://woailalalafanghu.com?a=062c5bc9'); 
-        }
-    </script>
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-4 py-12 md:py-20 relative">
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <!-- Hero Content -->
+            <div class="mb-6 md:mb-12">
+                <h1 class="hero-title text-4xl md:text-6xl lg:text-8xl font-black mb-4 md:mb-8 leading-tight tracking-tight mobile-compact">
+                    انضم إلى <span class="text-accent-yellow neon-text">مجموعة تعليم التداول</span>
+                </h1>
+                <p class="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-4 md:mb-8 max-w-4xl mx-auto leading-relaxed font-light mobile-compact">
+                    تعلم أساسيات الاستثمار وتحليل الأسواق المالية
+                </p>
+
+                <!-- Stats Section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 md:mb-8 max-w-4xl mx-auto mobile-compact">
+                    <div class="elite-card p-4 md:p-6 rounded-2xl">
+                        <div class="text-2xl md:text-3xl font-black text-accent-yellow mb-2">+5,000</div>
+                        <div class="text-gray-300 text-sm md:text-base">طالب مسجل</div>
+                    </div>
+                   
+                </div>
+                
+                <!-- Hero Image moved here -->
+                <div class="relative mb-4 md:mb-8 mobile-compact-lg">
+                    <div class="absolute inset-0 bg-gradient-to-r from-accent-yellow/20 to-electric-blue/20 rounded-2xl blur-2xl"></div>
+                    <img src="img/1.jpg" 
+                         alt="محتوى تعليمي للتداول" 
+                         class="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl glow-effect relative z-10 premium-shadow">
+                </div>
+                
+                <p class="text-base md:text-xl text-gray-400 mb-6 md:mb-12 max-w-3xl mx-auto leading-relaxed mobile-compact">
+                    انضم إلى مجموعة تعليمية لتعلم أساسيات التحليل المالي والاستثمار. احصل على محتوى تعليمي يومي وتعلم كيفية فهم الأسواق المالية. <strong class="text-red-400">تذكر: جميع الاستثمارات تنطوي على مخاطر.</strong>
+                </p>
+                
+                <button id="joinNowBtn" class="golden-gradient text-deep-blue px-8 md:px-16 py-4 md:py-6 rounded-full text-xl md:text-2xl font-bold hover-glow relative overflow-hidden group mobile-compact">
+                    <span class="relative z-10">ابدأ التعلم</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transform -skew-x-12 group-hover:translate-x-full transition-all duration-700"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="pt-4 pb-12 md:py-20 px-4 relative mobile-features-section">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center feature-grid">
+                <div class="space-y-4 md:space-y-8">
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl font-black mb-4 md:mb-8 leading-tight mobile-compact">
+                        تعلم <span class="text-accent-yellow neon-text">أساسيات الاستثمار</span> بطريقة علمية
+                    </h2>
+                    <p class="text-xl md:text-xl text-gray-300 mb-4 md:mb-8 leading-relaxed font-light mobile-compact">
+                        مهتم بتعلم الاستثمار؟ انضم إلى مجموعتنا التعليمية واحصل على محتوى تعليمي يومي حول تحليل الأسواق والاستثمار المسؤول.
+                    </p>
+                    
+                    <div class="space-y-4 md:space-y-8">
+                        <div class="flex items-start space-x-4 md:space-x-6 elite-card p-4 md:p-6 rounded-2xl feature-card space-x-reverse">
+                            <div class="number-circle animate-pulse-glow">1</div>
+                            <div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-accent-yellow">انضم للمجموعة التعليمية</h3>
+                                <p class="text-gray-300 text-base md:text-xl">تسجيل مجاني للوصول إلى المحتوى التعليمي والموارد التعليمية.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4 md:space-x-6 elite-card p-4 md:p-6 rounded-2xl feature-card space-x-reverse">
+                            <div class="number-circle animate-pulse-glow" style="animation-delay: 0.5s;">2</div>
+                            <div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-electric-blue">تعلم التحليل</h3>
+                                <p class="text-gray-300 text-base md:text-xl">احصل على دروس يومية حول تحليل الأسواق والتقييم المالي.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4 md:space-x-6 elite-card p-4 md:p-6 rounded-2xl feature-card space-x-reverse">
+                            <div class="number-circle animate-pulse-glow" style="animation-delay: 1s;">3</div>
+                            <div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-cyber-purple">طبق المعرفة</h3>
+                                <p class="text-gray-300 text-base md:text-xl">استخدم ما تعلمته في قراراتك المالية، مع فهم المخاطر دائماً.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-4 md:space-y-8">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-gradient-to-r from-accent-yellow/20 to-electric-blue/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                        <img src="img/11.jpg" 
+                             alt="محتوى تعليمي" 
+                             class="w-full rounded-2xl shadow-xl card-hover relative z-10 premium-shadow">
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-12 md:py-20 px-4 relative mobile-section">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl lg:text-6xl font-black text-center mb-8 md:mb-16 leading-tight mobile-compact">
+                ماذا يقول <span class="text-accent-yellow neon-text">طلابنا</span> المتعلمون
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+                <div class="testimonial-card p-4 md:p-8 rounded-2xl card-hover relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-accent-yellow/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <img src="img/tx(11).png" 
+                         alt="طالب 1" 
+                         class="w-32 md:w-48 h-auto mx-auto mb-3 md:mb-6 relative z-10">
+                    <h4 class="font-bold text-center mb-2 md:mb-3 text-xl md:text-xl text-accent-yellow">أحمد م.</h4>
+                    <p class="text-gray-300 text-center leading-relaxed text-sm md:text-base">
+                        "المحتوى التعليمي مفيد جداً في فهم الأسواق المالية بشكل أفضل."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card p-4 md:p-8 rounded-2xl card-hover relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-electric-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <img src="img/tx(22).png" 
+                         alt="طالبة 2" 
+                         class="w-32 md:w-48 h-auto mx-auto mb-3 md:mb-6 relative z-10">
+                    <h4 class="font-bold text-center mb-2 md:mb-3 text-xl md:text-xl text-electric-blue">فاطمة ك.</h4>
+                    <p class="text-gray-300 text-center leading-relaxed text-sm md:text-base">
+                        "تعلمت الكثير عن التحليل المالي وإدارة المخاطر."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card p-4 md:p-8 rounded-2xl card-hover relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyber-purple/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <img src="img/tx(33).png" 
+                         alt="طالب 3" 
+                         class="w-32 md:w-48 h-auto mx-auto mb-3 md:mb-6 relative z-10">
+                    <h4 class="font-bold text-center mb-2 md:mb-3 text-xl md:text-xl text-cyber-purple">محمد ع.</h4>
+                    <p class="text-gray-300 text-center leading-relaxed text-sm md:text-base">
+                        "محتوى تعليمي ممتاز ومدرسين مؤهلين."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card p-4 md:p-8 rounded-2xl card-hover relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-neon-green/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <img src="img/tx(55).png" 
+                         alt="طالبة 4" 
+                         class="w-32 md:w-48 h-auto mx-auto mb-3 md:mb-6 relative z-10">
+                    <h4 class="font-bold text-center mb-2 md:mb-3 text-xl md:text-xl text-neon-green">نور ز.</h4>
+                    <p class="text-gray-300 text-center leading-relaxed text-sm md:text-base">
+                        "ساعدني المحتوى في فهم أساسيات الاستثمار المسؤول."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-12 md:py-20 px-4 relative mobile-section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl lg:text-6xl font-black mb-4 md:mb-8 leading-tight mobile-compact">
+                ابدأ رحلة <span class="text-accent-yellow neon-text">التعلم</span> المالي
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-300 mb-6 md:mb-12 font-light mobile-compact">
+                انضم إلى مجموعتنا التعليمية وابدأ تعلم أساسيات الاستثمار
+            </p>
+            
+            <div class="elite-card p-6 md:p-10 rounded-3xl mb-6 md:mb-12 relative overflow-hidden mobile-compact">
+                <div class="absolute inset-0 bg-gradient-to-r from-accent-yellow/5 via-electric-blue/5 to-cyber-purple/5"></div>
+                <div class="text-accent-yellow text-xl md:text-3xl font-black mb-3 md:mb-6 neon-text">📚 محتوى تعليمي</div>
+                <div class="text-2xl md:text-4xl font-black mb-3 md:mb-6">مجاني 100%</div>
+                <div class="text-gray-300 text-xl md:text-xl">تعلم أساسيات الاستثمار والتحليل المالي</div>
+            </div>
+            
+            <button id="joinSignalBtn" class="golden-gradient text-deep-blue px-12 md:px-20 py-6 md:py-8 rounded-full text-xl md:text-3xl font-black hover-glow mb-4 md:mb-8 relative overflow-hidden group mobile-compact">
+                <span class="relative z-10">انضم للمجموعة التعليمية</span>
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 transform -skew-x-12 group-hover:translate-x-full transition-all duration-700"></div>
+            </button>
+            
+            <p class="text-red-400 leading-relaxed text-sm md:text-base font-bold">
+                تحذير مهم: هذا المحتوى لأغراض تعليمية فقط وليس نصيحة استثمارية. استشر مستشار مالي مؤهل قبل اتخاذ أي قرارات استثمارية.
+            </p>
+        </div>
+    </section>
+
+    <!-- Educational Disclaimer Section -->
+    <section class="py-8 md:py-12 px-4 bg-blue-900/20 border-t border-blue-500/30 relative mobile-section">
+        <div class="max-w-6xl mx-auto">
+            <div class="elite-card border-blue-500/50 rounded-3xl p-6 md:p-10">
+                <h3 class="text-2xl md:text-3xl font-black text-blue-400 mb-4 md:mb-8 text-center neon-text">📚 إخلاء مسؤولية تعليمي</h3>
+                <div class="text-gray-300 space-y-3 md:space-y-6 leading-relaxed text-sm md:text-base">
+                    <p><strong class="text-blue-400">الغرض التعليمي:</strong> هذا المحتوى مخصص للأغراض التعليمية والمعلوماتية فقط. لا يُقصد به تقديم نصائح استثمارية أو توصيات مالية شخصية.</p>
+                    
+                    <p><strong class="text-blue-400">ليس نصيحة مالية:</strong> جميع المعلومات المقدمة هي لأغراض التعلم فقط. يجب عليك استشارة مستشار مالي مؤهل قبل اتخاذ أي قرارات استثمارية.</p>
+                    
+                    <p><strong class="text-blue-400">فهم المخاطر:</strong> جميع الاستثمارات تنطوي على مخاطر، بما في ذلك احتمال خسارة رأس المال. الأداء السابق لا يضمن النتائج المستقبلية.</p>
+                    
+                    <p><strong class="text-blue-400">البحث المستقل:</strong> نشجعك على إجراء بحثك المستقل وطلب المشورة من محترفين مؤهلين قبل اتخاذ قرارات مالية.</p>
+                    
+                    <p><strong class="text-blue-400">المسؤولية الشخصية:</strong> أنت مسؤول عن قراراتك المالية. نحن لا نتحمل المسؤولية عن أي خسائر قد تنتج عن استخدام هذا المحتوى التعليمي.</p>
+                    
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Warning Section -->
+    <section class="py-8 md:py-12 px-4 bg-red-900/20 border-t border-red-500/30 relative mobile-section">
+        <div class="max-w-6xl mx-auto">
+            <div class="elite-card border-red-500/50 rounded-3xl p-6 md:p-10">
+                <h3 class="text-2xl md:text-3xl font-black text-red-400 mb-4 md:mb-8 text-center neon-text">⚠️ تحذير مهم من المخاطر</h3>
+                <div class="text-gray-300 space-y-3 md:space-y-6 leading-relaxed text-sm md:text-base">
+                    <p><strong class="text-red-400">المخاطر العالية:</strong> تداول الأدوات المالية ينطوي على مخاطر عالية جداً وقد يؤدي إلى خسارة كامل رأس المال المستثمر. قد تفقد أكثر من استثمارك الأولي.</p>
+                    
+                    <p><strong class="text-red-400">عدم ملاءمة للجميع:</strong> التداول والاستثمار ليس مناسباً لجميع المستثمرين. تأكد من فهمك الكامل للمخاطر المرتبطة.</p>
+                    
+                    <p><strong class="text-red-400">تقلبات السوق:</strong> الأسواق المالية شديدة التقلب وغير متوقعة. يمكن أن تتغير الظروف بسرعة وتؤثر على استثماراتك.</p>
+                    
+                    <p><strong class="text-red-400">لا توجد ضمانات:</strong> لا توجد ضمانات للأرباح أو الحماية من الخسائر. جميع الاستثمارات تحمل مخاطر جوهرية.</p>
+                    
+                    <p><strong class="text-red-400">استثمر بحذر:</strong> استثمر فقط الأموال التي يمكنك تحمل خسارتها تماماً دون التأثير على وضعك المالي أو مستوى معيشتك.</p>
+                    
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-deep-blue/95 backdrop-blur-lg border-t border-gray-700/50 py-8 md:py-16 px-4 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-12">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl md:text-3xl font-black mb-3 md:mb-6 text-accent-yellow neon-text">مجموعة تعليم التداول</h3>
+                    <p class="text-gray-300 mb-3 md:mb-6 text-base md:text-xl leading-relaxed">
+                        منصة تعليمية لتعلم أساسيات الاستثمار والتحليل المالي. محتوى تعليمي مجاني لفهم الأسواق المالية.
+                    </p>
+                    <p class="text-red-400 text-sm font-bold">
+                        تحذير: هذا المحتوى لأغراض تعليمية فقط وليس نصيحة استثمارية.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-3 md:mb-6 text-xl md:text-xl text-electric-blue">قانوني</h4>
+                    <ul class="space-y-2 md:space-y-3 text-gray-300 text-sm md:text-base">
+                        <li><a href="#" class="hover:text-accent-yellow transition-colors duration-300">سياسة الخصوصية</a></li>
+                        <li><a href="#" class="hover:text-accent-yellow transition-colors duration-300">شروط الخدمة</a></li>
+                        <li><a href="#" class="hover:text-accent-yellow transition-colors duration-300">إخلاء المسؤولية</a></li>
+                        <li><a href="#" class="hover:text-accent-yellow transition-colors duration-300">الإفصاح عن المخاطر</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700/50 pt-4 md:pt-8 text-center text-gray-400 text-sm md:text-base">
+                <p>&copy; 2025 مجموعة تعليم التداول. جميع الحقوق محفوظة.</p>
+                <p class="mt-2 md:mt-3 text-red-400 font-bold">
+                    تحذير: التداول ينطوي على مخاطر عالية. المحتوى لأغراض تعليمية فقط.
+                </p>
+                <p class="mt-2 md:mt-3">
+                    <a href="#" class="text-accent-yellow hover:underline">سياسة الخصوصية</a> | 
+                    <a href="#" class="text-accent-yellow hover:underline">شروط الخدمة</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
